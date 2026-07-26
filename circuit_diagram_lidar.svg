@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="650" fill="#fafaf8"/>
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Arduino Uno + VL53L1X LiDAR + Vibration Motor — Circuit</text>
+
+  <rect x="60" y="90" width="160" height="380" rx="8" fill="#2b6cb0" stroke="#1a365d" stroke-width="2"/>
+  <text x="140" y="115" text-anchor="middle" font-size="15" fill="#fff" font-weight="bold">Arduino Uno</text>
+
+  <circle cx="220" cy="160" r="4" fill="#fff"/>
+  <text x="230" y="164" font-size="13" fill="#1a1a1a">A4 (SDA)</text>
+
+  <circle cx="220" cy="200" r="4" fill="#fff"/>
+  <text x="230" y="204" font-size="13" fill="#1a1a1a">A5 (SCL)</text>
+
+  <circle cx="220" cy="240" r="4" fill="#fff"/>
+  <text x="230" y="244" font-size="13" fill="#1a1a1a">D6 (PWM to motor)</text>
+
+  <circle cx="220" cy="320" r="4" fill="#fff"/>
+  <text x="230" y="324" font-size="13" fill="#1a1a1a">5V</text>
+
+  <circle cx="220" cy="360" r="4" fill="#fff"/>
+  <text x="230" y="364" font-size="13" fill="#1a1a1a">GND</text>
+
+  <circle cx="220" cy="400" r="4" fill="#fff"/>
+  <text x="230" y="404" font-size="13" fill="#1a1a1a">GND</text>
+
+  <!-- VL53L1X sensor board -->
+  <rect x="460" y="90" width="150" height="100" rx="6" fill="#e2e8f0" stroke="#4a5568" stroke-width="2"/>
+  <text x="535" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">VL53L1X</text>
+  <text x="535" y="132" text-anchor="middle" font-size="11" fill="#4a5568">ToF LiDAR</text>
+  <circle cx="500" cy="155" r="12" fill="#a0aec0" stroke="#4a5568"/>
+  <text x="535" y="185" text-anchor="middle" font-size="10" fill="#4a5568">VCC SDA SCL GND</text>
+
+  <circle cx="480" cy="190" r="4" fill="#1a1a1a"/>
+  <circle cx="510" cy="190" r="4" fill="#1a1a1a"/>
+  <circle cx="560" cy="190" r="4" fill="#1a1a1a"/>
+  <circle cx="590" cy="190" r="4" fill="#1a1a1a"/>
+
+  <!-- wires: Arduino to VL53L1X (I2C) -->
+  <path d="M220,160 L510,160 L510,190" stroke="#38a169" stroke-width="2" fill="none"/>
+  <text x="330" y="150" font-size="11" fill="#38a169">SDA (A4 to SDA)</text>
+
+  <path d="M220,200 L560,200 L560,190" stroke="#805ad5" stroke-width="2" fill="none"/>
+  <text x="330" y="220" font-size="11" fill="#805ad5">SCL (A5 to SCL)</text>
+
+  <path d="M220,320 L480,320 L480,190" stroke="#c53030" stroke-width="2" fill="none"/>
+  <text x="330" y="335" font-size="11" fill="#c53030">VCC (5V)</text>
+
+  <path d="M220,360 L590,360 L590,190" stroke="#2d3748" stroke-width="2" fill="none"/>
+  <text x="330" y="375" font-size="11" fill="#2d3748">GND</text>
+
+  <text x="700" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Motor Drive Circuit</text>
+
+  <line x1="680" y1="300" x2="680" y2="360" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="665" y1="315" x2="695" y2="315" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="680" y1="300" x2="700" y2="290" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="680" y1="345" x2="700" y2="360" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="710" y="295" font-size="12" fill="#1a1a1a">C</text>
+  <text x="640" y="320" font-size="12" fill="#1a1a1a">B</text>
+  <text x="710" y="365" font-size="12" fill="#1a1a1a">E</text>
+  <text x="655" y="400" text-anchor="middle" font-size="12" fill="#1a1a1a">2N2222</text>
+
+  <rect x="590" y="308" width="40" height="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="610" y="300" text-anchor="middle" font-size="10" fill="#1a1a1a">220ohm</text>
+  <path d="M220,240 L590,240 L590,315 L665,315" stroke="#d69e2e" stroke-width="2" fill="none"/>
+  <text x="330" y="255" font-size="11" fill="#d69e2e">D6 PWM signal</text>
+
+  <circle cx="780" cy="290" r="25" fill="#f6e05e" stroke="#975a16" stroke-width="2"/>
+  <text x="780" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">M</text>
+  <text x="780" y="330" text-anchor="middle" font-size="11" fill="#1a1a1a">Vibration Motor</text>
+
+  <path d="M780,265 L780,240 L480,240 L480,320" stroke="#c53030" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M780,315 L780,340 L700,290" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+
+  <line x1="820" y1="270" x2="820" y2="310" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M812,270 L828,270 L820,285 Z" fill="#1a1a1a"/>
+  <line x1="812" y1="310" x2="828" y2="310" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="840" y="295" font-size="10" fill="#1a1a1a">1N4001</text>
+  <path d="M780,265 L820,265 L820,270" stroke="#1a1a1a" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M780,315 L820,315 L820,310" stroke="#1a1a1a" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <path d="M700,360 L700,400 L220,400" stroke="#2d3748" stroke-width="2" fill="none"/>
+  <text x="450" y="415" font-size="11" fill="#2d3748">GND (common)</text>
+
+  <rect x="60" y="510" width="780" height="120" rx="6" fill="#fff" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="80" y="533" font-size="13" font-weight="bold" fill="#1a1a1a">Legend</text>
+  <line x1="80" y1="550" x2="110" y2="550" stroke="#38a169" stroke-width="2"/>
+  <text x="118" y="554" font-size="12" fill="#1a1a1a">SDA (A4 to VL53L1X)</text>
+  <line x1="300" y1="550" x2="330" y2="550" stroke="#805ad5" stroke-width="2"/>
+  <text x="338" y="554" font-size="12" fill="#1a1a1a">SCL (A5 to VL53L1X)</text>
+  <line x1="80" y1="568" x2="110" y2="568" stroke="#c53030" stroke-width="2"/>
+  <text x="118" y="572" font-size="12" fill="#1a1a1a">5V power</text>
+  <line x1="300" y1="568" x2="330" y2="568" stroke="#2d3748" stroke-width="2"/>
+  <text x="338" y="572" font-size="12" fill="#1a1a1a">GND (shared ground)</text>
+  <line x1="80" y1="586" x2="110" y2="586" stroke="#d69e2e" stroke-width="2"/>
+  <text x="118" y="590" font-size="12" fill="#1a1a1a">D6 PWM to transistor base</text>
+  <text x="80" y="608" font-size="11.5" fill="#4a5568">Note: VL53L1X uses I2C (only 4 wires total) - simpler wiring than the old ultrasonic sensor.</text>
+  <text x="80" y="623" font-size="11.5" fill="#4a5568">Motor circuit unchanged: sits between 5V and transistor collector, emitter to GND, diode for spike protection.</text>
+</svg>
