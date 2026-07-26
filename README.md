@@ -23,7 +23,7 @@ Traditional canes only detect obstacles at ground level and require physical con
 
 ## 🔌 Circuit Diagram
 **Prototype (ultrasonic):**
-![Ultrasonic circuit](./circuit_diagram_uno.svg)
+![LED test circuit](./uno_hcsr04_led_diagram.svg)
 
 **Final (LiDAR):**
 ![LiDAR circuit](./circuit_diagram_lidar.svg)
