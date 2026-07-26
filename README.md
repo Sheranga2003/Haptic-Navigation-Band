@@ -23,9 +23,11 @@ Traditional canes only detect obstacles at ground level and require physical con
 
 ## 🔌 Circuit Diagram
 **Prototype (ultrasonic):**
+
 ![LED test circuit](./uno_hcsr04_led_diagram.svg)
 
 **Final (LiDAR):**
+
 ![LiDAR circuit](./circuit_diagram_lidar.svg)
 
 ## 💻 Code
@@ -43,7 +45,6 @@ See [`/code`](./code) for Arduino sketches:
 ## 🧠 Challenges & Decisions
 - *Why ERM over LRA motor:* simpler PWM control, no dedicated driver chip needed
 - *Why LiDAR over ultrasonic:* narrower beam = more precise directional feedback, smaller footprint for wearable design
-- *(add more as you hit real snags — this section matters most to reviewers)*
 
 ## 🚀 Future Improvements
 - Multiple sensors for directional feedback (left/right/front)
