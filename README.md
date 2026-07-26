@@ -31,7 +31,7 @@ See [`/code`](./code) for Arduino sketches:
 - `lidar_motor_final.ino` — final LiDAR-based version
 
 ## 📈 Development Log
-- **[Date]** — Prototyped distance-to-blink-rate logic with HC-SR04 + LED on breadboard
+- **July 25th, 2026** — Prototyped distance-to-blink-rate logic with HC-SR04 + LED on breadboard
 - **[Date]** — Swapped LED for vibration motor, added transistor driver circuit
 - **[Date]** — Switched sensor to VL53L1X LiDAR for better accuracy/range
 - **[Date]** — Designed and printed wearable enclosure in Fusion 360
