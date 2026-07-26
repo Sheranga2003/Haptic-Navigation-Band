@@ -22,7 +22,8 @@ Traditional canes only detect obstacles at ground level and require physical con
 | 3D printed enclosure (Fusion 360) | Wearable housing |
 
 ## 🔌 Circuit Diagram
-*(insert the SVG diagrams here)*
+![LED test circuit](./uno_hcsr04_led_diagram.svg)
+![Motor circuit](./circuit_diagram.svg)
 
 ## 💻 Code
 See [`/code`](./code) for Arduino sketches:
