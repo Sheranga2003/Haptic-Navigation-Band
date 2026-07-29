@@ -37,14 +37,15 @@ See [`/code`](./code) for Arduino sketches:
 - `lidar_motor_final.ino` — final LiDAR-based version
 
 ## 📈 Development Log
-- **July 25th, 2026** — Prototyped distance-to-blink-rate logic with HC-SR04 + LED on breadboard
-- **[Date]** — Swapped LED for vibration motor, added transistor driver circuit
-- **[Date]** — Switched sensor to VL53L1X LiDAR for better accuracy/range
-- **[Date]** — Designed and printed wearable enclosure in Fusion 360
+- **07/25/2026** — Prototyped distance-to-blink-rate logic with HC-SR04 + LED on breadboard
+- **07/28/2026** — Swapped LED for vibration motor, added transistor driver circuit
+- **07/28/2026** — Switched sensor to VL53L1X, then TF-Luna LiDAR for better range/accuracy
+- **July 29, 2026** — Debugged TF-Luna I2C wiring (bad breadboard row + MODE pin confusion caused I2C bus to hang); got full LiDAR + vibration motor pulsing pipeline working end-to-end
 
 ## 🧠 Challenges & Decisions
 - *Why ERM over LRA motor:* simpler PWM control, no dedicated driver chip needed
 - *Why LiDAR over ultrasonic:* narrower beam = more precise directional feedback, smaller footprint for wearable design
+- *I2C debugging:* a half-connected sensor (power disconnected, but data lines still attached) silently hung the entire I2C bus, since the Wire library has no built-in timeout. Learned to fully disconnect devices when testing, not just power. Also traced a bad breadboard power row that looked connected but wasn't providing real voltage — confirmed with a direct-to-pin connection bypassing the breadboard entirely
 
 ## 🚀 Future Improvements
 - Multiple sensors for directional feedback (left/right/front)
