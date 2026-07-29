@@ -32,7 +32,6 @@ Traditional canes only detect obstacles at ground level and require physical con
 ## 💻 Code
 See [`/code`](./code) for Arduino sketches:
 - `ultrasonic_led_test.ino` — early prototype, LED stands in for motor
-- `ultrasonic_motor.ino` — vibration motor version
 - `lidar_motor_final.ino` — final LiDAR-based version
 
 ## 📈 Development Log
