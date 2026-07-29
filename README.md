@@ -15,20 +15,19 @@ Traditional canes only detect obstacles at ground level and require physical con
 ## 📦 Hardware
 | Component | Purpose |
 |---|---|
-| Arduino Uno | Microcontroller |
-| HC-SR04 (prototype) → VL53L1X LiDAR (final) | Distance sensing |
+| Arduino Nano | Microcontroller |
+| HC-SR04 (early prototype) → TF-Luna LiDAR (final) | Distance sensing |
 | ERM coin vibration motor (10mm, 3V) | Haptic feedback |
-| 2N2222 transistor + 1N4001 diode | Motor driver circuit |
+| 2N2222 / S8050 transistor + 1N4001 diode | Motor driver circuit |
 | 3D printed enclosure (Fusion 360) | Wearable housing |
+| 3.7V LiPo battery + TP4056 charger + boost converter | Portable power (planned) |
 
 ## 🔌 Circuit Diagram
-**Prototype (ultrasonic):**
+**Final wiring (Nano + TF-Luna LiDAR + vibration motor):**
+![Final circuit](./circuit_diagram_final.svg)
 
+**Earlier prototype (Uno + ultrasonic + LED):**
 ![LED test circuit](./uno_hcsr04_led_diagram.svg)
-
-**Final (LiDAR):**
-
-![LiDAR circuit](./circuit_diagram_lidar.svg)
 
 ## 💻 Code
 See [`/code`](./code) for Arduino sketches:
@@ -41,6 +40,7 @@ See [`/code`](./code) for Arduino sketches:
 - **07/28/2026** — Swapped LED for vibration motor, added transistor driver circuit
 - **07/28/2026** — Switched sensor to VL53L1X, then TF-Luna LiDAR for better range/accuracy
 - **July 29, 2026** — Debugged TF-Luna I2C wiring (bad breadboard row + MODE pin confusion caused I2C bus to hang); got full LiDAR + vibration motor pulsing pipeline working end-to-end
+- **July 29, 2026** — Finalized circuit diagram and updated documentation
 
 ## 🧠 Challenges & Decisions
 - *Why ERM over LRA motor:* simpler PWM control, no dedicated driver chip needed
