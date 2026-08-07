@@ -29,6 +29,10 @@ Traditional canes only detect obstacles at ground level and require physical con
 **Earlier prototype (Uno + ultrasonic + LED):**
 ![LED test circuit](./uno_hcsr04_led_diagram.svg)
 
+## 🧊 CAD Files
+- [Enclosure body (STL)](./models/Haptic_Band_V2_Body.stl)
+- [Enclosure cover (STL)](./models/Haptic_Band_V2_Cover.stl)
+
 ## 💻 Code
 See [`/code`](./code) for Arduino sketches:
 - `ultrasonic_led_test.ino` — early prototype, LED stands in for motor
