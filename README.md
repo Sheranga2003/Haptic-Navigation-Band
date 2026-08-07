@@ -30,8 +30,8 @@ Traditional canes only detect obstacles at ground level and require physical con
 ![LED test circuit](./uno_hcsr04_led_diagram.svg)
 
 ## 🧊 CAD Files
-- [Enclosure body (STL)](./models/Haptic_Band_V2_Body.stl)
-- [Enclosure cover (STL)](./models/Haptic_Band_V2_Cover.stl)
+- [Enclosure body (STL)](./Haptic_Band_V2_Body.stl)
+- [Enclosure cover (STL)](./Haptic_Band_V2_Cover.stl)
 
 ## 💻 Code
 See [`/code`](./code) for Arduino sketches:
